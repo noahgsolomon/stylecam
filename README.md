@@ -51,10 +51,10 @@ Edit `prompt.txt` while running to change the style on the fly. The file is poll
 
 Tunable constants at the top of `stylecam.py`:
 
-| Constant | Default | Description |
-|---|---|---|
-| `CAMERA_WIDTH` / `CAMERA_HEIGHT` | 1280x720 | Webcam capture resolution |
-| `FPS` | 30 | Virtual camera output framerate |
-| `JPEG_QUALITY` | 50 | JPEG compression for upload (lower = faster) |
-| `NUM_STEPS` | 2 | Inference steps (1-8, lower = faster) |
-| `SEED` | 42 | Generation seed |
+| Constant                         | Default  | Description                                  |
+| -------------------------------- | -------- | -------------------------------------------- |
+| `CAMERA_WIDTH` / `CAMERA_HEIGHT` | 1280x720 | Webcam capture resolution                    |
+| `FPS`                            | 30       | Virtual camera output framerate              |
+| `JPEG_QUALITY`                   | 50       | JPEG compression for upload (lower = faster) |
+| `NUM_STEPS`                      | 2        | Inference steps (1-8, lower = faster)        |
+| `SEED`                           | 42       | Generation seed                              |

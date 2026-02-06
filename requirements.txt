@@ -1,7 +1,6 @@
 pyvirtualcam
 opencv-python
 numpy
-websockets
 msgpack
 Pillow
 aiohttp
