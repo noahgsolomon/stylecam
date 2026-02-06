@@ -15,12 +15,15 @@ import msgpack
 import numpy as np
 import pyvirtualcam
 import websockets
+from dotenv import load_dotenv
 from PIL import Image
 
-# fal.ai auth via FAL_KEY env var
+load_dotenv()
+
+# fal.ai auth via FAL_KEY env var or .env file
 FAL_KEY = os.environ.get("FAL_KEY")
 if not FAL_KEY:
-    raise RuntimeError("FAL_KEY environment variable is required")
+    raise RuntimeError("FAL_KEY environment variable is required. Set it in .env or export it.")
 
 FAL_APP = "fal-ai/flux-2/klein/realtime"
 FAL_REST_URL = "https://rest.alpha.fal.ai"
@@ -142,7 +145,7 @@ class KleinVirtualCamera:
         ws_url = self._build_ws_url()
         self.websocket = await websockets.connect(
             ws_url,
-            max_size=10 * 1024 * 1024  # 10MB max message size
+            max_size=10 * 768 * 768  # 10MB max message size
         )
         print("Connected!")
 

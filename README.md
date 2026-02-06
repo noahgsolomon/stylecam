@@ -29,8 +29,16 @@ pip install -r requirements.txt
 
 ## Usage
 
+Add your fal.ai key to `.env`:
+
 ```
-FAL_KEY=your-key-here python stylecam.py
+FAL_KEY=your-key-here
+```
+
+Then run:
+
+```
+python stylecam.py
 ```
 
 Select **OBS Virtual Camera** as the camera in your video app.

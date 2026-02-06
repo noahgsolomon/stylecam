@@ -5,3 +5,4 @@ websockets
 msgpack
 Pillow
 aiohttp
+python-dotenv
