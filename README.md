@@ -2,6 +2,8 @@
 
 Restyle your webcam in real time using [fal.ai](https://fal.ai) and output to OBS Virtual Camera. Use it as a camera source in Zoom, Google Meet, etc.
 
+https://github.com/user-attachments/assets/6b4d3b33-f2e1-4f3e-956a-ded38f92e46a
+
 ## Prerequisites
 
 - macOS
